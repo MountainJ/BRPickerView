@@ -459,6 +459,9 @@ typedef NS_ENUM(NSInteger, BRDatePickerStyle) {
         case BRDatePickerModeY:
         {
             NSInteger yearIndex = self.yearArr.count > 0 ? self.yearArr.count - 1 : 0;
+            if (self.addFirstLineString.length) {
+                yearIndex = 0;
+            }
             NSInteger component = 0;
             if (self.pickerMode == BRDatePickerModeYMD && ![self.pickerStyle.language hasPrefix:@"zh"]) {
                 component = 2;

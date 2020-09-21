@@ -114,6 +114,10 @@ typedef void (^BRDateResultBlock)(NSDate * _Nullable selectDate, NSString * _Nul
 /** 最后一行，添加【自定义字符串】；配合 selectValue 可设置默认选中 */
 @property (nullable, nonatomic, copy) NSString *addCustomString;
 
+
+@property (nullable, nonatomic, copy) NSString *addFirstLineString;
+
+
 /** 时间列表排序是否降序，默认为 NO（升序）*/
 @property (nonatomic, assign, getter=isDescending) BOOL descending;
 
