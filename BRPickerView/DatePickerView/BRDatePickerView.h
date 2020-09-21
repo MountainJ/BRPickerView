@@ -115,7 +115,7 @@ typedef void (^BRDateResultBlock)(NSDate * _Nullable selectDate, NSString * _Nul
 @property (nullable, nonatomic, copy) NSString *addCustomString;
 
 
-@property (nullable, nonatomic, copy) NSString *addFirstLineString;
+@property (nonatomic, assign) BOOL showCustomFirstLine;
 
 
 /** 时间列表排序是否降序，默认为 NO（升序）*/

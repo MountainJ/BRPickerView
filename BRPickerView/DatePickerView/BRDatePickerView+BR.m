@@ -173,7 +173,7 @@ BRSYNTH_DUMMY_CLASS(BRDatePickerView_BR)
             case BRDatePickerModeYM:
             case BRDatePickerModeY:
             {
-                if (self.addFirstLineString.length) {
+                if (self.showCustomFirstLine) {
                     [tempArr insertObject:self.addCustomString atIndex:0];
                 } else {
                     [tempArr addObject:self.addCustomString];
